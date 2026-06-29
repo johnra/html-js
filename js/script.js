@@ -22,6 +22,9 @@ formulario.addEventListener("submit", function(event){
     const nombre = formulario.nombre.value.trim(); //obtener valor del input
     // "    Hola mundo  "  .trim() -> "Hola mundo"
     const edad = Number(formulario.edad.value);
+    const estadocivil = formulario.estadocivil.value;
+
+    console.log("Tu nombre es ", nombre)
 
     // Como validamos que un campo no sea vacio?
     if (nombre === ""){

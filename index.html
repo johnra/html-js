@@ -19,11 +19,13 @@
 
         <br>
         <label>Estado Civil:</label>
-        <select>
-            <option>Casado</option>
-            <option>Soltero</option>
-            <option>Divorciado</option>
+        <select name="EstadoCivil">
+            <option value="-1">---Debe Seleccionar una opcion---</option>
+            <option value="0">Casado</option>
+            <option value="1">Soltero</option>
+            <option value="2">Divorciado</option>
         </select>
+        <p id="error-nombre"></p>
         <br>
         <label>Tiene licencia:</label>
         <input  name="licencia" type="radio"><span>Si</span>
