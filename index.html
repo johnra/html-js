@@ -15,26 +15,27 @@
         <br>
         <label>Edad:</label>
         <input type="number" name="edad">
-        <p id="error-nombre"></p>
+        <p id="error-edad"></p>
 
         <br>
         <label>Estado Civil:</label>
-        <select name="EstadoCivil">
+        <select name="estadoCivil">
             <option value="-1">---Debe Seleccionar una opcion---</option>
             <option value="0">Casado</option>
             <option value="1">Soltero</option>
             <option value="2">Divorciado</option>
         </select>
-        <p id="error-nombre"></p>
+        <p id="error-ecivil"></p>
         <br>
         <label>Tiene licencia:</label>
-        <input  name="licencia" type="radio"><span>Si</span>
-        <input  name="licencia" type="radio"><span>No</span>
+        <input  name="licencia" value="si" type="radio"><span>Si</span>
+        <input  name="licencia" value="no" type="radio"><span>No</span>
+        <p id="error-licencia"></p>
         <br>
         <label>Esta de acuerdo?</label>
-        <input type="checkbox">
+        <input id="ticket" type="checkbox">
         <br>
-        <button type="submit">Aceptar</button>
+        <button id="btn-aceptar" type="submit" disabled>Aceptar</button>
     </form>
 
     <script src="js/script.js"></script>
