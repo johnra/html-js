@@ -6,8 +6,20 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+        .bg-rojo{
+            background-color: red;
+            color: white;
+        }
+        
+        .bg-verde{
+            background-color: green;
+            color: white;
+        }
+    </style>
+
     <h1>Ejercicio formulario</h1>
-    
+
     <form id="formulario">
         <label>Nombre:</label>
         <input type="text" name="nombre">
@@ -16,20 +28,19 @@
         <label>Edad:</label>
         <input type="number" name="edad">
         <p id="error-edad"></p>
-
         <br>
-        <label>Estado Civil:</label>
+        <label>Estado civil:</label>
         <select name="estadoCivil">
-            <option value="-1">---Debe Seleccionar una opcion---</option>
-            <option value="0">Casado</option>
-            <option value="1">Soltero</option>
+            <option value="-1">-- Debe seleccionar una opcion --</option>
+            <option value="0">Soltero</option>
+            <option value="1">Casado</option>
             <option value="2">Divorciado</option>
         </select>
         <p id="error-ecivil"></p>
         <br>
-        <label>Tiene licencia:</label>
-        <input  name="licencia" value="si" type="radio"><span>Si</span>
-        <input  name="licencia" value="no" type="radio"><span>No</span>
+        <label>Tience licencia:</label>
+        <input name="licencia" value="si" type="radio"><span>Si</span>
+        <input name="licencia" value="no" type="radio"><span>No</span>
         <p id="error-licencia"></p>
         <br>
         <label>Esta de acuerdo?</label>
@@ -37,6 +48,31 @@
         <br>
         <button id="btn-aceptar" type="submit" disabled>Aceptar</button>
     </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Estado civil</th>
+                <th>Licencia Conducir</th>
+            </tr>
+        </thead>
+        <tbody id="tabla">
+            <tr class="bg-verde">
+                <td>Perico Los Palotes</td>
+                <td>45</td>
+                <td>Soltero</td>
+                <td>Si</td>
+            </tr>
+            <tr class="bg-rojo">
+                <td>Maria Las Petunias</td>
+                <td>35</td>
+                <td>Soltero</td>
+                <td>No</td>
+            </tr>
+        </tbody>
+    </table>
 
     <script src="js/script.js"></script>
 </body>
